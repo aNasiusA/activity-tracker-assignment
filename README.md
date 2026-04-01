@@ -321,7 +321,7 @@ For production deployment:
 
 ## 📧 Contact & Support
 
-For questions or support regarding this application, contact NPONTU Technologies.
+For questions or support regarding this application, contact aNasiusA.
 
 ---
 
