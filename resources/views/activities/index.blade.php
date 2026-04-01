@@ -7,7 +7,7 @@
         <!-- Sidebar: Quick Actions & Date -->
         <div class="lg:col-span-1 space-y-6">
             <!-- Date Picker Card -->
-            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg p-6">
+            <div class="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg p-6">
                 <label for="dateSelect" class="block text-sm font-semibold text-slate-700 mb-3">Select Date</label>
                 <form action="{{ route('activities.index') }}" method="GET">
                     <input type="date" name="date" id="dateSelect" value="{{ $selectedDate }}"
@@ -18,7 +18,7 @@
 
             <!-- New Activity Button -->
             <a href="{{ route('activities.create') }}"
-                class="w-full block bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all text-center">
+                class="w-full block bg-linear-to-r from-blue-600 to-blue-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all text-center">
                 <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                         d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
@@ -29,7 +29,7 @@
 
             <!-- Reports Button -->
             <a href="{{ route('reports.index') }}"
-                class="w-full block bg-gradient-to-r from-emerald-600 to-emerald-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all text-center">
+                class="w-full block bg-linear-to-r from-emerald-600 to-emerald-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all text-center">
                 <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path
                         d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
@@ -61,7 +61,7 @@
                     <h3 class="text-2xl font-bold text-slate-900 mb-2">No activities yet</h3>
                     <p class="text-slate-600 mb-6">Create your first activity to get started</p>
                     <a href="{{ route('activities.create') }}"
-                        class="inline-block bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-8 rounded-lg font-semibold hover:shadow-lg transition-all">
+                        class="inline-block bg-linear-to-r from-blue-600 to-blue-700 text-white py-3 px-8 rounded-lg font-semibold hover:shadow-lg transition-all">
                         Create First Activity
                     </a>
                 </div>
@@ -85,7 +85,7 @@
                                 <!-- Current Status -->
                                 @if ($activity->latestUpdate())
                                     <div
-                                        class="bg-gradient-to-r {{ $activity->latestUpdate()->status === 'done' ? 'from-emerald-50 to-teal-50 border-l-4 border-emerald-500' : 'from-amber-50 to-orange-50 border-l-4 border-amber-500' }} rounded-lg p-4 mt-4 space-y-3">
+                                        class="bg-linear-to-r {{ $activity->latestUpdate()->status === 'done' ? 'from-emerald-50 to-teal-50 border-l-4 border-emerald-500' : 'from-amber-50 to-orange-50 border-l-4 border-amber-500' }} rounded-lg p-4 mt-4 space-y-3">
                                         <div class="flex items-center gap-3">
                                             @if ($activity->latestUpdate()->status === 'done')
                                                 <div class="bg-emerald-500 rounded-full p-2">

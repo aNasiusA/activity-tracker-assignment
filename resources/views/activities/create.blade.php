@@ -69,7 +69,7 @@
 
                 <div class="flex gap-4 pt-4">
                     <button type="submit"
-                        class="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all duration-200">
+                        class="flex-1 bg-linear-to-r from-blue-600 to-blue-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all duration-200">
                         Create Activity
                     </button>
                     <a href="{{ route('activities.index') }}"

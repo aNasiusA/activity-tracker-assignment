@@ -50,7 +50,7 @@
 
                         <div class="flex gap-3 pt-4">
                             <button type="submit"
-                                class="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all">
+                                class="flex-1 bg-linear-to-r from-blue-600 to-blue-700 text-white py-3 px-4 rounded-lg hover:shadow-lg font-semibold transition-all">
                                 <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -69,7 +69,7 @@
 
             <!-- Info Card -->
             <div>
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg p-6 border border-blue-200">
+                <div class="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg p-6 border border-blue-200">
                     <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wide mb-4">Activity Info</h3>
                     <div class="space-y-4">
                         <div>
